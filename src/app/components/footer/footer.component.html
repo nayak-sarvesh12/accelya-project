@@ -1,0 +1,21 @@
+<div class="align-divs">
+  <div class="alignment">
+    <p class="signup-text">
+      Sign up and <br />
+      get free content everyweek.
+    </p>
+    <input
+      class="signup-input"
+      type="email"
+      [(ngModel)]="email"
+      placeholder="Enter your email..."
+    />
+    <button class="signup-button">Sign Up</button>
+  </div>
+  <div>
+    <p class="signup-text">Browse by categories</p>
+    <ul class="categories-align">
+      <li *ngFor="let items of categories">{{ items }}</li>
+    </ul>
+  </div>
+</div>

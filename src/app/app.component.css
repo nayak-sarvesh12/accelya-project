@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-image: linear-gradient(-27deg, #fe6c00 0%, #b35400 100%);
+}
+
+.header-text {
+  font-size: 70px;
+}
+
+.first-column:nth-child(3n + 0) {
+  display: none;
+}
+.first-column:nth-child(3n + 2) {
+  display: none;
+}
+.second-column:nth-child(3n + 0) {
+  display: none;
+}
+.second-column:nth-child(3n + 1) {
+  display: none;
+}
+.third-column:nth-child(3n + 2) {
+  display: none;
+}
+.third-column:nth-child(3n + 1) {
+  display: none;
+}
+
+.align-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-style {
+  font-size: 18px;
+  color: #becbd1;
+  font-family: "Museo Slab";
+  width: 420px;
+  max-width: 100%;
+  height: 62px;
+  border-radius: 6px 0px 0px 6px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  padding-top: 2px;
+  border-bottom-width: 2px;
+  padding-left: 10px;
+}
+.dropdown-style {
+  width: 157px;
+  max-width: 100%;
+  height: 65px;
+  background-color: #e2eef4;
+  border: none;
+  outline: none;
+  padding: 2px;
+}
+.search-icon {
+  width: 67px;
+  height: 65px;
+  background-color: #000000;
+  color: #becbd1;
+  border: none;
+  outline: none;
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
+}
+.search-font {
+  font-size: 40px;
+  height: 40px;
+  width: 40px;
+}
+.main-section {
+  height: auto;
+  background-color: #f7f7f7;
+  width: 800px;
+  margin-top: 40px;
+  align-self: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.footer {
+  background-color: #363b3e;
+  width: 100%;
+  padding-bottom: 5%;
+}
+.align-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+.align-footer a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #8a949a;
+  font-family: "Museo Slab";
+}
+
+.align-footer li {
+  margin-left: 5px;
+}
+.align-icons ~ p {
+  text-align: left;
+  padding-left: 45px;
+  font-size: 13px;
+  color: #b4bdc2;
+}
+
+span > img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+span > img:nth-child(3) {
+  width: 26px;
+  height: 29px;
+  position: relative;
+  bottom: 11%;
+}
+.align-icons {
+  display: grid;
+  grid-auto-flow: column;
+  padding-top: 20px;
+}
